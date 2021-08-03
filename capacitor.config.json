@@ -1,0 +1,6 @@
+{
+  "appId": "com.geoapp.front",
+  "appName": "geoapp-front",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}

@@ -1,0 +1,7 @@
+{
+  "name": "geoapp-front",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

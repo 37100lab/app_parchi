@@ -1,0 +1,12 @@
+// Auth
+export const AUTH_USER = 'AUTH_USER'
+export const AUTH_ERROR = 'AUTH_ERROR'
+
+// Map
+export const SET_VIEW = 'SET_VIEW'
+export const SHOW_LOCATION_MODAL = 'SHOW_LOCATION_MODAL'
+export const DISMISS_LOCATION_MODAL = 'DISMISS_LOCATION_MODAL'
+
+// Locations
+export const FETCH_LOCATIONS = 'FETCH_LOCATIONS'
+export const CLEAR_LOCATIONS = 'CLEAR_LOCATIONS'
