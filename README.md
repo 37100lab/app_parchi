@@ -1,6 +1,14 @@
+# Parchi di Verona
 
-# Parchi a Verona
-![Footer-1-768x129](https://user-images.githubusercontent.com/3799322/128165876-cb851333-dfb6-491e-9d62-d1adc5df45fa.jpg)
+# Il progetto
+La seguente applicazione mobile nasce dall'esigenza di trovare in tempo reale ed istantaneamente più vicino alla nostra posizione attuale. L'obiettivo è quello di fornire uno strumento facile ed efficace, utilizzabile dai cittadini, per ottenere un servizio veloce ed affidabile nella consultazione di archivi comunali per un servizio informativo migliore.
+# Come utilizzare l'applicazione
+Per utilizzare l'App è sufficiente installarla sul proprio dispositivo e selezionare i punti interattivi sulla mappa nella provincia di verona.
+# credits
+Lavoro sviluppato da Innovation Lab in collaborazione con Comune di Verona.
+![Sponsor](https://user-images.githubusercontent.com/87977853/127863204-46d984eb-4025-479b-b6e6-4bd8f8e38c5c.jpeg)
+
+# Description of the project (ENG)
 This app displays the parks of Verona.
 By clicking on each park will be possible to view its information
 App developed by [37100LAB](https://37100lab.comune.verona.it).
