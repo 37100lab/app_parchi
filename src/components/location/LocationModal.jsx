@@ -69,7 +69,7 @@ export const LocationModal = ({ loc }) => {
         <IonLabel>{stringManager.titleCase((loc.properties.circoscriz).toString().substring(2))}</IonLabel>
       </IonItem>
       <IonItem>
-        <IonNote slot="start" color="primary">Tipo Area.</IonNote>
+        <IonNote slot="start" color="primary">Tipo Area</IonNote>
         <IonLabel>{stringManager.titleCase(loc.properties.tipo_area)}</IonLabel>
       </IonItem>
       <IonItem>
