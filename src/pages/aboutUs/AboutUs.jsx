@@ -6,18 +6,17 @@ import {
     IonIcon,
     IonLabel,
     IonButton,
-    IonTabButton,
     IonFooter,
     IonToolbar,
     IonCardContent,
     IonCard,
   } from '@ionic/react'
   import React from 'react'
-  import { images, logoInstagram, square, triangle } from 'ionicons/icons';
+ 
   import abb from '../../assets/img/abb.jpeg'
   import smartphone from '../../assets/img/smartphone.png'
-  import { medkitOutline, leafOutline,  mapOutline,logoFacebook,atCircleOutline,earthOutline,
-    searchOutline, } from 'ionicons/icons'
+  import { logoInstagram,logoFacebook,earthOutline,logoLinkedin,logoYoutube,
+    } from 'ionicons/icons'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css'
@@ -35,19 +34,9 @@ import '@ionic/react/css/text-transformation.css'
 import '@ionic/react/css/flex-utils.css'
 import '@ionic/react/css/display.css'
 
-import { IonReactRouter, } from '@ionic/react-router';
 
- 
-const categoryConfig = {
-  parco: {
-      icon: leafOutline,
-      color: 'success',
-  },
-  farmacia: {
-      icon: medkitOutline,
-      color: 'danger',
-  },
-  }
+
+
 
   const AboutUs = (props) => {
     return (
@@ -68,23 +57,52 @@ const categoryConfig = {
        </IonToolbar>
        
         <IonContent >
-        
-            <IonToolbar color="success">
-           
-            <IonTabButton tab="map" href="/map">
+      
+            <IonToolbar  color="success">
+            
+              <div  style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+                }}>
+        <IonButton href="https://www.facebook.com/37100Lab.ComuneVerona" color="dark" shape="round" fill="outline" class="ion-justify-content-center">
               <IonIcon size="large" icon={ logoFacebook} />
-              <IonLabel>Facebook</IonLabel>
-            </IonTabButton>
+              <IonLabel ></IonLabel>
+            </IonButton>
+            </div>
 
-            <IonTabButton tab="aboutus" href="/aboutus">
+            <div  style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+                }}>
+            <IonButton tab="insta" href="https://www.instagram.com/37100lab.comunediverona/" color="dark" shape="round" fill="outline" class="ion-justify-content-center">
               <IonIcon size="large" icon={logoInstagram} />
-              <IonLabel>Instagram</IonLabel>
-            </IonTabButton>
-             
-             <IonTabButton tab="aboutus" href="/aboutus">
-              <IonIcon size="large" icon={atCircleOutline} />
-              <IonLabel>ComuneVerona.it</IonLabel>
-            </IonTabButton>
+              <IonLabel></IonLabel>
+            </IonButton>
+            </div>
+
+            <div  style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+                }}>
+                  <IonButton tab="linkedin" href="https://www.linkedin.com/company/37100lab-comune-di-verona/" color="dark" shape="round" fill="outline" class="ion-justify-content-center">
+              <IonIcon size="large" icon={logoLinkedin} />
+              <IonLabel></IonLabel>
+            </IonButton>
+            </div>
+              
+            <div  style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+                }}>
+                  <IonButton tab="youtube" href="https://www.youtube.com/channel/UCuUl-_yGTbId8juRTmhZ9EA" color="dark" shape="round" fill="outline" class="ion-justify-content-center">
+              <IonIcon size="large" icon={logoYoutube} />
+              <IonLabel></IonLabel>
+            </IonButton>
+            </div>
           
             </IonToolbar>
            
@@ -92,8 +110,8 @@ const categoryConfig = {
             <IonCard color="light">
           <IonItem>
             <IonIcon icon={earthOutline} slot="start" />
-            <IonLabel color="dark">GEOAPP</IonLabel>
-            <IonButton href="https://www.comune.verona.it" fill="outline" slot="end">View</IonButton>
+            <IonLabel color="dark">PROSSIMI EVENTI 37100 COMUNE DI VERONA</IonLabel>
+            <IonButton href="https://37100lab.comune.verona.it/eventi/" fill="outline" slot="end">View</IonButton>
           </IonItem>
 
           <IonCardContent>
