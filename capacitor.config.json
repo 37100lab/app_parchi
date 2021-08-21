@@ -1,6 +1,6 @@
 {
-  "appId": "com.geoapp.front",
-  "appName": "geoapp-front",
+  "appId": "com.geo.parchi",
+  "appName": "geo-parchi",
   "webDir": "build",
   "bundledWebRuntime": false
 }

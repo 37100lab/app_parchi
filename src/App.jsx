@@ -8,11 +8,8 @@ import {
   IonTabButton,
   IonTabs,
 } from '@ionic/react'
-import { IonReactRouter } from '@ionic/react-router'
-import {
-  mapOutline,
-  searchOutline,
-} from 'ionicons/icons'
+import { IonReactHashRouter } from '@ionic/react-router'
+import { mapOutline, searchOutline } from 'ionicons/icons'
 
 import Map from './pages/map/Map'
 import AboutUs from './pages/aboutUs/AboutUs'
@@ -40,7 +37,7 @@ import './theme/variables.css'
 const App = () => {
   return (
     <IonApp>
-      <IonReactRouter>
+      <IonReactHashRouter>
         <IonTabs>
           <IonRouterOutlet>
             <Route path="/map" component={Map} />
@@ -60,7 +57,7 @@ const App = () => {
             </IonTabButton>
           </IonTabBar>
         </IonTabs>
-      </IonReactRouter>
+      </IonReactHashRouter>
     </IonApp>
   )
 }

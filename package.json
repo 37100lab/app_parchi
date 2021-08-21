@@ -1,14 +1,16 @@
 {
-  "name": "geoapp-front",
-  "version": "0.1.0",
-  "private": true,
+  "name": "geo-parchi",
+  "homepage": "https://ahmedaidev.github.io/geo-parchi",
+  "version": "1.0.0",
   "dependencies": {
     "@capacitor/android": "3.1.2",
     "@capacitor/camera": "^1.0.1",
+    "@capacitor/cli": "^3.2.0",
     "@capacitor/core": "3.0.1",
     "@capacitor/filesystem": "^1.0.1",
     "@capacitor/geolocation": "^1.0.2",
     "@capacitor/storage": "^1.0.1",
+    "@ionic/cli": "^6.17.0",
     "@ionic/pwa-elements": "^3.0.2",
     "@ionic/react": "^5.6.9",
     "@ionic/react-router": "^5.6.9",
@@ -38,7 +40,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "add:android": "ionic cap add android",
+    "sync": "ionic cap sync",
+    "start:android": "ionic cap run android -l --external --port=3000",
+    "open:android": "ionic cap open android"
   },
   "eslintConfig": {
     "extends": [
@@ -50,8 +56,5 @@
     ">0.2%",
     "not dead",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "@capacitor/cli": "3.0.1"
-  }
+  ]
 }
