@@ -59,6 +59,7 @@ export class Map extends Component {
   componentDidCatch() {
     this.setState({ gpsError: true })
   }
+
   async componentDidMount() {
     try {
       const res = await Geolocation.getCurrentPosition()
