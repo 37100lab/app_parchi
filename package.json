@@ -3,7 +3,7 @@
   "homepage": "https://ahmedaidev.github.io/geo-parchi",
   "version": "1.0.0",
   "dependencies": {
-    "@capacitor/android": "3.1.2",
+    "@capacitor/android": "3.2.0",
     "@capacitor/camera": "^1.0.1",
     "@capacitor/cli": "^3.2.0",
     "@capacitor/core": "3.0.1",

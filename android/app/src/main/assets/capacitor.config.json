@@ -1,0 +1,6 @@
+{
+	"appId": "com.geo.parchi",
+	"appName": "geo-parchi",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
