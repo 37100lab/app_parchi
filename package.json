@@ -1,6 +1,5 @@
 {
   "name": "geo-parchi",
-  "homepage": "https://ahmedaidev.github.io/geo-parchi",
   "version": "1.0.0",
   "dependencies": {
     "@capacitor/android": "3.2.0",
