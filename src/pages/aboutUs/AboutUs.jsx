@@ -9,6 +9,10 @@ import {
   IonToolbar,
   IonCardContent,
   IonCard,
+  IonTitle,
+  IonGrid,
+  IonRow,
+  IonCol,
 } from '@ionic/react'
 import React from 'react'
 
@@ -22,116 +26,84 @@ import {
   logoYoutube,
 } from 'ionicons/icons'
 
-/* Core CSS required for Ionic components to work properly */
-import '@ionic/react/css/core.css'
-
-/* Basic CSS for apps built with Ionic */
-import '@ionic/react/css/normalize.css'
-import '@ionic/react/css/structure.css'
-import '@ionic/react/css/typography.css'
-
-/* Optional CSS utils that can be commented out */
-import '@ionic/react/css/padding.css'
-import '@ionic/react/css/float-elements.css'
-import '@ionic/react/css/text-alignment.css'
-import '@ionic/react/css/text-transformation.css'
-import '@ionic/react/css/flex-utils.css'
-import '@ionic/react/css/display.css'
-
 const AboutUs = props => {
   return (
     <IonPage>
       <IonToolbar>
-        <IonImg src={abb} style={{ maxWidth: '400px', margin: 'auto' }} />
-
-        <IonImg
-          src={smartphone}
-          style={{ maxWidth: '150px', margin: 'auto' }}
-        />
+        <IonTitle>Parchi a Verona</IonTitle>
       </IonToolbar>
-      <IonToolbar></IonToolbar>
 
       <IonContent>
-        <IonToolbar color="success">
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <IonButton
-              href="https://www.facebook.com/37100Lab.ComuneVerona"
-              color="dark"
-              shape="round"
-              fill="outline"
-              class="ion-justify-content-center"
-            >
-              <IonIcon size="large" icon={logoFacebook} />
-              <IonLabel></IonLabel>
-            </IonButton>
-          </div>
+        <IonGrid fixed>
+          <IonRow>
+            <IonCol>
+              <IonImg src={abb} style={{ maxWidth: '400px', margin: 'auto' }} />
+            </IonCol>
+          </IonRow>
 
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <IonButton
-              tab="insta"
-              href="https://www.instagram.com/37100lab.comunediverona/"
-              color="dark"
-              shape="round"
-              fill="outline"
-              class="ion-justify-content-center"
-            >
-              <IonIcon size="large" icon={logoInstagram} />
-              <IonLabel></IonLabel>
-            </IonButton>
-          </div>
+          <IonRow>
+            <IonCol>
+              <IonImg
+                src={smartphone}
+                style={{ maxWidth: '150px', margin: 'auto' }}
+              />
+            </IonCol>
+          </IonRow>
 
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <IonButton
-              tab="linkedin"
-              href="https://www.linkedin.com/company/37100lab-comune-di-verona/"
-              color="dark"
-              shape="round"
-              fill="outline"
-              class="ion-justify-content-center"
-            >
-              <IonIcon size="large" icon={logoLinkedin} />
-              <IonLabel></IonLabel>
-            </IonButton>
-          </div>
-
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <IonButton
-              tab="youtube"
-              href="https://www.youtube.com/channel/UCuUl-_yGTbId8juRTmhZ9EA"
-              color="dark"
-              shape="round"
-              fill="outline"
-              class="ion-justify-content-center"
-            >
-              <IonIcon size="large" icon={logoYoutube} />
-              <IonLabel></IonLabel>
-            </IonButton>
-          </div>
-        </IonToolbar>
+          <IonRow className="ion-align-items-center ion-margin-top">
+            <IonCol size="3">
+              <IonButton
+                href="https://www.facebook.com/37100Lab.ComuneVerona"
+                color="dark"
+                shape="round"
+                fill="outline"
+                class="ion-justify-content-center"
+              >
+                <IonIcon size="large" icon={logoFacebook} />
+                <IonLabel></IonLabel>
+              </IonButton>
+            </IonCol>
+            <IonCol size="3">
+              <IonButton
+                tab="insta"
+                href="https://www.instagram.com/37100lab.comunediverona/"
+                color="dark"
+                shape="round"
+                fill="outline"
+                class="ion-justify-content-center"
+              >
+                <IonIcon size="large" icon={logoInstagram} />
+                <IonLabel></IonLabel>
+              </IonButton>
+            </IonCol>
+            <IonCol size="3">
+              <IonButton
+                tab="linkedin"
+                href="https://www.linkedin.com/company/37100lab-comune-di-verona/"
+                color="dark"
+                shape="round"
+                fill="outline"
+                class="ion-justify-content-center"
+              >
+                <IonIcon size="large" icon={logoLinkedin} />
+                <IonLabel></IonLabel>
+              </IonButton>
+            </IonCol>
+            <IonCol size="3">
+              <IonButton
+                tab="youtube"
+                href="https://www.youtube.com/channel/UCuUl-_yGTbId8juRTmhZ9EA"
+                color="dark"
+                shape="round"
+                fill="outline"
+                class="ion-justify-content-center"
+              >
+                <IonIcon size="large" icon={logoYoutube} />
+                <IonLabel></IonLabel>
+              </IonButton>
+            </IonCol>
+          </IonRow>
+        </IonGrid>
 
         <IonCard color="light">
           <IonItem>
@@ -149,7 +121,6 @@ const AboutUs = props => {
           </IonItem>
 
           <IonItem>
-            <IonIcon icon={earthOutline} slot="start" />
             <IonLabel color="dark" className="ion-text-wrap">
               CHI SIAMO
             </IonLabel>

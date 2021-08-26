@@ -1,3 +1,1 @@
-export { register, login, logout } from './auth'
-
-export { setMapView, showLocationModal, dismissLocationModal } from './map'
+export { setGps, showLocationModal, dismissLocationModal } from './map'

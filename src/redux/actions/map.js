@@ -1,7 +1,11 @@
-import { SET_VIEW, SHOW_LOCATION_MODAL, DISMISS_LOCATION_MODAL } from './types'
+import {
+  SET_CURRENT_POSITION,
+  SHOW_LOCATION_MODAL,
+  DISMISS_LOCATION_MODAL,
+} from './types'
 
-export const setMapView = payload => ({
-  type: SET_VIEW,
+export const setGps = payload => ({
+  type: SET_CURRENT_POSITION,
   payload,
 })
 
