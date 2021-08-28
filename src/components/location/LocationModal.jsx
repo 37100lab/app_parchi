@@ -26,7 +26,7 @@ const categoryConfig = {
   },
 }
 
-export const LocationModal = ({ loc }) => {
+const LocationModal = ({ loc }) => {
   //if don't have loc.properties or its attributes throw internal error text,
   // just to easily customize the app farmacie in to other apps
   if (

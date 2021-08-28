@@ -5,7 +5,7 @@ import { IonButton } from '@ionic/react'
 import { showLocationModal } from '../../redux/actions'
 import stringManager from '../../utility/stringManager'
 
-export const Location = ({ location, showLocationModal }) => {
+const Location = ({ location, showLocationModal }) => {
   return (
     <div>
       <h3>{stringManager.titleCase(location.properties.denominazi)}</h3>
